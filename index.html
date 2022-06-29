@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https: //fonts.googleapis.com/css2?family= Noto+Sans & display семья = Ното + Санс: вес @ 400; 500; 600 & swap"
+        rel="stylesheet">
+    <title></title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container _container">
+            <div class="header__logo">
+                <img src="img/paws.png  " alt="">
+            </div>
+            <div class="header__title">Cat Shop</div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__container _container">
+            <div class="main__column">
+                <div class="main__item item__card">
+                    <div class="item-card__icon">
+                        <img src="img/01.png" alt="Cat's food">
+                    </div>
+                    <h3 class="item-card__title">Cat's food</h3>
+                    <a href="#popup" class="item-card__button pop" data-product="Cat`s food">Заказать</a>
+                </div>
+            </div>
+            <div class="main__column">
+                <div class="main__item item__card">
+                    <div class="item-card__icon">
+                        <img src="img/02.png" alt="Plaything">
+                    </div>
+                    <h3 class="item-card__title">Plaything</h3>
+                    <a href="#popup" class="item-card__button pop" data-product="Plaything">Заказать</a>
+                </div>
+            </div>
+            <div class="main__column">
+                <div class="main__item item__card">
+                    <div class="item-card__icon">
+                        <img src="img/03.png" alt="Scratching post">
+                    </div>
+                    <h3 class="item-card__title">Scratching post</h3>
+                    <a href="#popup" class="item-card__button pop" data-product="Scratching post">Заказать</a>
+                </div>
+            </div>
+            <div class="main__column">
+                <div class="main__item item__card">
+                    <div class="item-card__icon">
+                        <img src="img/04.png" alt="Box">
+                    </div>
+                    <h3 class="item-card__title" id="">Box</h3>
+                    <a href="#popup" class="item-card__button pop" data-product="Box">Заказать</a>
+                </div>
+            </div>
+        </div>
+        <div id="popup" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#" class="popup__close">X</a>
+                    <div class="popup__title">Оформление заказа</div>
+                    <div class="popup__form">
+                        <form action="mail.php" method="post">
+                            <label for="name" class="popup__label">
+                                <input type="text" class="popup__input" name="user_name" placeholder="Имя">
+                            </label>
+                            <label for="phone" class="popup__label">
+                                <input type="tel" class="popup__input" name="user_phone" placeholder="Телефон">
+                            </label>
+                            <label for="product" class="popup__label">
+                                <input type="text" id="product" class="popup__input" name="user_product">
+                            </label>
+                            <div class="popup__button button-order">
+                                <button type="submit" class="button-order__text">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
