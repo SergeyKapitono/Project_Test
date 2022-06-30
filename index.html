@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https: //fonts.googleapis.com/css2?family= Noto+Sans & display семья = Ното + Санс: вес @ 400; 500; 600 & swap" rel="stylesheet">
+    <link
+        href="https: //fonts.googleapis.com/css2?family= Noto+Sans & display семья = Ното + Санс: вес @ 400; 500; 600 & swap"
+        rel="stylesheet">
     <title></title>
 </head>
 
@@ -70,14 +72,13 @@
                                 <input type="text" id="name" class="popup__input" name="name" placeholder="Имя">
                             </label>
                             <label for="phone" class="popup__label">
-                                <input type="tel" id="phone" class="popup__input" name="phone"
-                                    placeholder="Телефон">
+                                <input type="tel" id="phone" class="popup__input" name="phone" placeholder="Телефон">
                             </label>
                             <label for="product" class="popup__label">
                                 <input type="text" id="product" class="popup__input" name="user_product">
                             </label>
                             <div class="popup__button button-order">
-                                <button type="submit" class="button-order__text">Отправить</button>
+                                <button type="submit" onclick="ym(89366671,'reachGoal','click')" class="button-order__text">Отправить</button>
                             </div>
                         </div>
                     </form>
@@ -88,15 +89,38 @@
     </main>
     <footer>
         <div class="overlay js-overlay-thank-you">
-			<div class="popup js-thank-you">
-				<h2>Спасибо за заявку!</h2>
-			</div>
-		</div>
+            <div class="popup js-thank-you">
+                <h2>Спасибо за заявку!</h2>
+            </div>
+        </div>
     </footer>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
     <script src="js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode
+                .insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(89366671, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/89366671" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
 </body>
 
 </html>
