@@ -47,8 +47,9 @@ body {
     display: flex;
     min-height: 104px;
     align-items: center;
-    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.471);
     background-color: #f9f7f7;
+    border-radius: 20px;
 }
 
 .header__title {
@@ -73,9 +74,10 @@ body {
 
 .main__item {
     margin-top: 80px;
-    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.471);
     background-color: #fff;
     padding: 35px;
+    border-radius: 20px;
 }
 
 .item__card {
@@ -106,6 +108,7 @@ body {
     line-height: 142%;
     padding: 3px;
     border: 1px solid #252B42;
+    border-radius: 10px;
 }
 
 .item-card__button:hover {
@@ -145,6 +148,7 @@ body {
 .popup__content {
     background-color: #FFF;
     color: #000;
+    border-radius: 20px;
     max-width: 800px;
     padding: 30px;
     position: relative;
@@ -187,6 +191,7 @@ body {
     width: 100%;
     height: 35px;
     padding: 7px;
+    cursor: pointer;
 }
 
 .popup__button {
@@ -200,10 +205,15 @@ body {
     margin-top: 10px;
     text-align: center;
     border: 1px solid #82bdf3;
+    border-radius: 10px;
     padding: 7px;
     background-color:#82bdf3;
     color:#fff; 
     cursor: pointer;
+}
+
+.button-order__text:focus {
+    background-color:#3d9cf5;
 }
 
 

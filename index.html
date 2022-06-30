@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link
-        href="https: //fonts.googleapis.com/css2?family= Noto+Sans & display семья = Ното + Санс: вес @ 400; 500; 600 & swap"
-        rel="stylesheet">
+    <link href="https: //fonts.googleapis.com/css2?family= Noto+Sans & display семья = Ното + Санс: вес @ 400; 500; 600 & swap" rel="stylesheet">
     <title></title>
 </head>
 
@@ -64,15 +62,16 @@
         <div id="popup" class="popup">
             <div class="popup__body">
                 <div class="popup__content">
-                    <a href="#" class="popup__close">X</a>
-                    <div class="popup__title">Оформление заказа</div>
-                    <div class="popup__form">
-                        <form action="mail.php" method="post">
+                    <form action="mail.php" method="post" id="form" name="form" class="form">
+                        <a href="#" class="popup__close">X</a>
+                        <div class="popup__title">Оформление заказа</div>
+                        <div class="popup__form">
                             <label for="name" class="popup__label">
-                                <input type="text" class="popup__input" name="user_name" placeholder="Имя">
+                                <input type="text" id="name" class="popup__input" name="name" placeholder="Имя">
                             </label>
                             <label for="phone" class="popup__label">
-                                <input type="tel" class="popup__input" name="user_phone" placeholder="Телефон">
+                                <input type="tel" id="phone" class="popup__input" name="phone"
+                                    placeholder="Телефон">
                             </label>
                             <label for="product" class="popup__label">
                                 <input type="text" id="product" class="popup__input" name="user_product">
@@ -80,16 +79,24 @@
                             <div class="popup__button button-order">
                                 <button type="submit" class="button-order__text">Отправить</button>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
+        </div>
     </main>
-
-    <footer></footer>
+    <footer>
+        <div class="overlay js-overlay-thank-you">
+			<div class="popup js-thank-you">
+				<h2>Спасибо за заявку!</h2>
+			</div>
+		</div>
+    </footer>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
 </html>
