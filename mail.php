@@ -12,7 +12,7 @@ $mail->isSMTP();
 $mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               
 $mail->Username = '1_2_3_4_5mark@mail.ru'; 
-$mail->Password = 'vxVRN2J71lYpzYNrWn11'; 
+$mail->Password = 'fdafbdbgsdgsgsgsgh'; 
 $mail->SMTPSecure = 'ssl';                          
 $mail->Port = 465; 
 
